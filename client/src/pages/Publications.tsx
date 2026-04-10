@@ -173,7 +173,7 @@ export default function Publications() {
       title: "RS-CLIP: Zero shot remote sensing scene classification via contrastive vision-language supervision",
       authors: "Xiang Li, Congcong Wen, Yuan Hu, Nan Zhou",
       venue: "International Journal of Applied Earth Observation and Geoinformation, 2023",
-      links: { paper: "https://www.sciencedirect.com/science/article/pii/S1569843223003217", code: "https://github.com/lx709/RS-CLIP" }
+      links: { paper: "https://www.sciencedirect.com/science/article/pii/S1569843223003217", code: "https://github.com/lx709/RS-CLIP" },
       badge: "ESI Highly Cited Paper (1%)"
     },
     {
