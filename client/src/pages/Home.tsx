@@ -171,11 +171,11 @@ export default function Home() {
               
               <div className="prose prose-sm max-w-none text-gray-700 leading-relaxed">
                 <p>
-                  I am a Lecturer (Assistant Professor) in the School of Computer Science at the University of Bristol and a faculty member of the Machine Learning and Computer Vision <span className="font-semibold">MaVi group</span>. Prior to joining Bristol, I held a Lecturer position at the University of Reading. Before that, I was a Postdoctoral Researcher at KAUST, working with Prof. Mohamed Elhoseiny, and at NYU, working with Prof. Yi Fang.
+                  I am a Lecturer (Assistant Professor) in the School of Computer Science at the University of Bristol and a faculty member of the Machine Learning and Computer Vision <span className="font-semibold">MaVi group</span>. Prior to joining Bristol, I held a Lecturer position at the University of Reading. Before that, I was a Postdoctoral Researcher at KAUST, working with Prof. <a href="https://www.mohamedelhoseiny.com/" className="text-blue-600 hover:underline">Mohamed Elhoseiny</a>, and at NYU, working with Prof. <a href="https://engineering.nyu.edu/faculty/yi-fang" className="text-blue-600 hover:underline">Yi Fang</a>.
                 </p>
                 
                 <p className="mt-4">
-                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 50 papers in top conferences and journals such as CVPR, ICCV, NeurIPS, TPAMI, and IJCV, with citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 3000 citations on Google Scholar and the first conversational MLLM in remote sensing.
+                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 60 papers in top conferences and journals such as CVPR, ICCV, NeurIPS, TPAMI, and IJCV, with over 10k citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 4000 citations on Google Scholar and the first conversational MLLM in remote sensing - RSGPT.
                 </p>
 
                 <p className="mt-4">
