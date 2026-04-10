@@ -13,7 +13,7 @@ export default function Publications() {
     }));
   };
 
-  const publications: Array<{year: number; title: string; authors: string; venue: string; links: {paper?: string; project?: string; code?: string; demo?: string}}> = [
+  const publications: Array<{year: number; title: string; authors: string; venue: string; links: {paper?: string; project?: string; code?: string; demo?: string}; badge?: string}> = [
     // 2026
     {
       year: 2026,
@@ -135,7 +135,8 @@ export default function Publications() {
       title: "Vision-Language Models in Remote Sensing: Current Progress and Future Trends",
       authors: "Xiang Li, Congcong Wen, Yuan Hu, Zhenghang Yuan, Xiao Xiang Zhu",
       venue: "IEEE Geoscience and Remote Sensing Magazine, 2024",
-      links: { paper: "https://arxiv.org/abs/2305.05726" }
+      links: { paper: "https://arxiv.org/abs/2305.05726" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2024,
@@ -173,6 +174,7 @@ export default function Publications() {
       authors: "Xiang Li, Congcong Wen, Yuan Hu, Nan Zhou",
       venue: "International Journal of Applied Earth Observation and Geoinformation, 2023",
       links: { paper: "https://www.sciencedirect.com/science/article/pii/S1569843223003217", code: "https://github.com/lx709/RS-CLIP" }
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2023,
@@ -253,7 +255,8 @@ export default function Publications() {
       title: "Few-shot object detection on remote sensing images",
       authors: "Xiang Li#, Jingyu Deng#, Yi Fang",
       venue: "IEEE Transactions on Geoscience and Remote Sensing, 2021",
-      links: { paper: "https://ieeexplore.ieee.org/document/9362267" }
+      links: { paper: "https://ieeexplore.ieee.org/document/9362267" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2021,
@@ -297,7 +300,8 @@ export default function Publications() {
       title: "Height estimation from single aerial images using a deep ordinal regression network",
       authors: "Xiang Li, Mingyang Wang, Yi Fang",
       venue: "IEEE Geoscience and Remote Sensing Letters, 2020",
-      links: { paper: "https://ieeexplore.ieee.org/document/9190011/" }
+      links: { paper: "https://ieeexplore.ieee.org/document/9190011/" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2020,
@@ -360,14 +364,15 @@ export default function Publications() {
       title: "Few-shot learning of part-specific probability space for 3D shape segmentation",
       authors: "Lingjing Wang#, Xiang Li#, Yi Fang",
       venue: "IEEE Conference on Computer Vision and Pattern Recognition, 2020",
-      links: {}
+      links: {paper: "https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_Few-Shot_Learning_of_Part-Specific_Probability_Space_for_3D_Shape_Segmentation_CVPR_2020_paper.pdf" }
     },
     {
       year: 2020,
       title: "Directionally constrained fully convolutional neural network for airborne LiDAR point cloud classification",
       authors: "Congcong Wen, Lina Yang, Xiang Li*, Ling Peng, Tianhe Chi",
       venue: "ISPRS Journal of Photogrammetry and Remote Sensing, 2020",
-      links: {}
+      links: {code: "https://github.com/lixiang-ucas/D-FCN", paper: "https://arxiv.org/abs/1908.06673" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
 
     // 2019
@@ -390,7 +395,8 @@ export default function Publications() {
       title: "A novel spatiotemporal convolutional long short-term neural network for air pollution prediction",
       authors: "Congcong Wen, Shufu Liu, Xiaojing Yao, Ling Peng, Xiang Li, Yuan Hu, Tianhe Chi",
       venue: "Science of the Total Environment, 2019",
-      links: { paper: "https://arxiv.org/abs/1908.06673" }
+      links: { paper: "https://arxiv.org/abs/1908.06673" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2019,
@@ -456,7 +462,8 @@ export default function Publications() {
       title: "Long short-term memory neural network for air pollutant concentration predictions: Method development and evaluation",
       authors: "Xiang Li, Ling Peng, Xiaojing Yao, Shaolong Cui, Yuan Hu, Chengzeng You, Tianhe Chi",
       venue: "Environmental Pollution, 2017",
-      links: { paper: "https://www.sciencedirect.com/science/article/pii/S0269749117307534" }
+      links: { paper: "https://www.sciencedirect.com/science/article/pii/S0269749117307534" },
+      badge: "ESI Highly Cited Paper (1%)"
     },
     {
       year: 2017,
@@ -541,6 +548,9 @@ export default function Publications() {
                 </div>
                 <p className="text-sm text-gray-600 mb-2">{pub.authors}</p>
                 {pub.venue && <p className="text-sm text-blue-600 font-semibold mb-3">{pub.venue}</p>}
+                {pub.badge && (
+                  <p className="text-xs font-semibold mb-3 inline-block bg-green-200 text-green-900 px-2 py-1 rounded">{pub.badge}</p>
+                )}
                 
                 {/* Links */}
                 {Object.keys(pub.links).length > 0 && (
