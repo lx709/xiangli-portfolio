@@ -147,23 +147,23 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 md:py-12">
         {/* Profile Section */}
         <section className="mb-16">
-          <div className="flex gap-8 items-start">
+          <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Profile Photo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 w-full md:w-auto">
               <img
                 src={profileImage}
                 alt="Xiang Li"
-                className="w-48 h-48 rounded-lg shadow-lg object-cover"
+                className="w-full md:w-48 h-auto md:h-48 rounded-lg shadow-lg object-cover"
               />
             </div>
 
             {/* Bio Section */}
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Xiang Li</h1>
-              <p className="text-lg text-gray-700 mb-4">
+            <div className="flex-1 w-full">
+              <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Xiang Li</h1>
+              <p className="text-base md:text-lg text-gray-700 mb-4">
                 <span className="font-semibold">Lecturer (Assistant Professor)</span> at the{" "}
                 <a href="#" className="text-blue-600 hover:underline">School of Computer Science</a>, 
                 {" "}<a href="#" className="text-blue-600 hover:underline">University of Bristol</a>
@@ -189,7 +189,7 @@ export default function Home() {
               </div>
 
               {/* Contact Links */}
-              <div className="mt-6 flex gap-4">
+              <div className="mt-6 flex flex-wrap gap-4">
                 <a href="mailto:xiang.li@bristol.ac.uk" className="text-blue-600 hover:underline">Email</a>
                 <a href="#" className="text-blue-600 hover:underline">GitHub</a>
                 <a href="#" className="text-blue-600 hover:underline">Google Scholar</a>
@@ -236,16 +236,16 @@ export default function Home() {
           
           <div className="space-y-6">
             {publications.map((pub, idx) => (
-              <div key={idx} className="flex gap-4 pb-6 border-b border-gray-200">
+              <div key={idx} className="flex flex-col md:flex-row gap-4 pb-6 border-b border-gray-200">
                 <img
                   src={pub.image}
                   alt={pub.title}
-                  className="w-24 h-24 rounded object-cover flex-shrink-0"
+                  className="w-full md:w-24 h-auto md:h-24 rounded object-cover flex-shrink-0"
                 />
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{pub.title}</h3>
-                  <p className="text-sm text-gray-600 mb-2">{pub.authors}</p>
-                  <p className="text-sm text-gray-600 font-semibold mb-3">{pub.venue}</p>
+                <div className="flex-1 w-full">
+                  <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">{pub.title}</h3>
+                  <p className="text-xs md:text-sm text-gray-600 mb-2">{pub.authors}</p>
+                  <p className="text-xs md:text-sm text-gray-600 font-semibold mb-3">{pub.venue}</p>
                   {pub.badge && (
                     <p className="text-xs font-semibold mb-3 inline-block bg-green-200 text-green-900 px-2 py-1 rounded">{pub.badge}</p>
                   )}
