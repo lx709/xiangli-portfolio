@@ -90,7 +90,7 @@ export default function Home() {
     },
     {
       title: "Uni3DL: A Unified Model for 3D Vision-Language Understanding",
-      authors: "Li Xiang, Ding Jian, Chen Zhaoyang, Elhoseiny Mohamed",
+      authors: "Xiang Li, Jian Ding, Zhaoyang Chen, Mohamed Elhoseiny",
       venue: "ECCV, 2024",
       image: "https://raw.githubusercontent.com/lx709/Uni3DL/main/images/teaser.png",
       links: { project: "https://uni3dl.github.io/", paper: "https://arxiv.org/abs/2312.03026" }
