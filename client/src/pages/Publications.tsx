@@ -20,28 +20,28 @@ export default function Publications() {
       title: "ChatEarthBench: Benchmarking multimodal large language models for Earth observation",
       authors: "Yuan Zhenghang, Xiong Zhitong, Dujardin Thomas, Li Xiang, Mou Lichao, Zhu Xiao Xiang",
       venue: "IEEE Geoscience and Remote Sensing Magazine, 2026",
-      links: {}
+      links: {code: "https://github.com/YZHJessica/chatearthbench"}
     },
     {
       year: 2026,
       title: "Remote Sensing Retrieval-Augmented Generation: Bridging remote sensing imagery and comprehensive knowledge with a multimodal dataset and retrieval-augmented generation model",
       authors: "Wen Congcong, Lin Yiting, Qu Xiaokang, Li Nan, Liao Yong, Li Xiang, Lin Hui",
       venue: "IEEE Geoscience and Remote Sensing Magazine, 2026",
-      links: {}
+      links: {code: "https://github.com/CongcongWen1208/RS-RAG", paper: "https://arxiv.org/abs/2504.04988"}
     },
     {
       year: 2026,
       title: "Confusion-Aware Spectral Regularizer for Long-Tailed Recognition",
       authors: "Zhu Ziquan, Jin Gaojie, Zhu Hanruo, Lu Si-Yuan, Zhang Yunxiao, Fu Zeyu, Mu Ronghui, Zhang Guoqiang, Sun Zhao, Yuhang Xia, Shang Jiaxing, Li Xiang, Liu Lu, Huang Tianjin",
       venue: "CVPR 2026 (Oral)",
-      links: {}
+      links: {paper: "https://arxiv.org/abs/2603.16732"}
     },
     {
       year: 2026,
       title: "Dual-Kernel Adapter: Expanding Spatial Horizons for Data-Constrained Medical Image Analysis",
       authors: "Zhu Ziquan, Zhu Hanruo, Lu Siyuan, Li Xiang, Meng Yanda, Jin Gaojie, Yin Lu, Hu Lijie, Wang Di, Liu Lu",
       venue: "ICLR 2026",
-      links: {}
+      links: {paper: "https://arxiv.org/abs/2602.18888"}
     },
     // 2025
     {
@@ -49,35 +49,35 @@ export default function Publications() {
       title: "REOBench: Benchmarking Robustness of Earth Observation Foundation Models",
       authors: "Li Xiang, Tao Yong, Zhang Siyuan, Liu Siwei, Xiong Zhitong, Luo Chunbo, Liu Lu, Pechenizkiy Mykola, Zhu Xiao Xiang, Huang Tianjin",
       venue: "NeurIPS 2025 D&B track",
-      links: { paper: "https://arxiv.org/pdf/2505.16793" }
+      links: {code: "https://github.com/lx709/reobench", paper: "https://arxiv.org/pdf/2505.16793" }
     },
     {
       year: 2025,
       title: "Few-Shot Oriented Object Detection in Remote Sensing Images via Memorable Contrastive Learning",
       authors: "Zhou Jiawei, Li Wuzhou, Cao Yi, Cai Hongtao, Huang Tianjin, Xia Gui-Song, Li* Xiang",
       venue: "IEEE Transactions on Geoscience and Remote Sensing, 2025",
-      links: {}
+      links: {code: "https://github.com/BriFuture/fomcd", paper: "https://arxiv.org/abs/2403.13375" }
     },
     {
       year: 2025,
       title: "3DCOMPAT++: An Improved Large-scale 3D Vision Dataset for Compositional Recognition",
       authors: "Slim Habib, Li Xiang, Li Yuchen, Ahmed Mahmoud, Ayman Mohamed, Upadhyay Ujjwal, Abdelreheem Ahmed, Prajapati Arpit, Pothigara Suhail, Wonka Peter",
       venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025",
-      links: {}
+      links: {code: "https://3dcompat-dataset.org/v2/", paper: "https://arxiv.org/abs/2310.18511" }
     },
     {
       year: 2025,
       title: "Geo-R1: Improving Few-Shot Geospatial Referring Expression Understanding with Reinforcement Fine-Tuning",
       authors: "Zhang Zilun, Guan Zian, Zhao Tiancheng, Shen Haozhan, Li Tianyu, Cai Yuxiang, Su Zhonggen, Liu Zhaojun, Yin Jianwei, Li* Xiang",
       venue: "ISPRS Journal of Photogrammetry and Remote Sensing, 2026",
-      links: {}
+      links: {code: "https://geo-r1.github.io/", paper: "https://arxiv.org/abs/2509.21976" }
     },
     {
       year: 2025,
-      title: "Stable-SPAM: How to Train in 4-Bit More Stably than 16-Bit Adam",
+      title: "GradientStabilizer: Fix the Norm, Not the Gradient",
       authors: "Huang Tianjin, Hu Haotian, Zhang Zhenyu, Jin Gaojie, Li Xiang, Shen Li, Chen Tianlong, Liu Lu, Wen Qingsong, Wang Zhangyang",
       venue: "First Workshop on Scalable Optimization for Efficient and Adaptive Foundation Models, 2025",
-      links: { paper: "https://arxiv.org/pdf/2502.17055" }
+      links: {paper: "https://arxiv.org/pdf/2502.17055" }
     },
     // 2024
     {
@@ -85,14 +85,14 @@ export default function Publications() {
       title: "3DCoMPaT200: Language Grounded Large-Scale 3D Vision Dataset for Compositional Recognition",
       authors: "Ahmed Mahmoud, Li Xiang, Prajapati Arpit, Elhoseiny Mohamed",
       venue: "Advances in Neural Information Processing Systems, 2024",
-      links: {}
+      links: {paper: "https://arxiv.org/abs/2501.06785", code: "https://github.com/3DCoMPaT200/3DCoMPaT200" }
     },
     {
       year: 2024,
       title: "Geoground: A unified large vision-language model for remote sensing visual grounding",
       authors: "Zhou Yue, Lan Mengcheng, Li Xiang, Ke Yiping, Jiang Xue, Feng Litong, Zhang Wayne",
       venue: "arXiv, 2024",
-      links: { paper: "https://arxiv.org/pdf/2411.11904" }
+      links: { paper: "https://arxiv.org/pdf/2411.11904", code: "https://github.com/VisionXLab/GeoGround" }
     },
     {
       year: 2024,
@@ -106,21 +106,21 @@ export default function Publications() {
       title: "Learning to learn point signature for 3D shape geometry",
       authors: "Huang Hao, Wang Lingjing, Li Xiang, Yuan Shuaihang, Wen Congcong, Hao Yu, Fang Yi",
       venue: "Pattern Recognition Letters, 2024",
-      links: {}
+      links: {paper: "https://www.sciencedirect.com/science/article/abs/pii/S0167865524001922" }
     },
     {
       year: 2024,
       title: "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
       authors: "Li Xiang, Ding Jian, Elhoseiny Mohamed",
       venue: "NeurIPS 2024",
-      links: { project: "https://vrsbench.github.io/", paper: "https://arxiv.org/abs/2406.12384" }
+      links: {code: "https://vrsbench.github.io/", paper: "https://arxiv.org/abs/2406.12384" }
     },
     {
       year: 2024,
       title: "InfRS: Incremental Few-Shot Object Detection in Remote Sensing Images",
       authors: "Li Wuzhou, Zhou Jiawei, Li Xiang, Cao Yi, Jin Guang, Zhang Xuemin",
       venue: "IEEE Transactions on Geoscience and Remote Sensing, 2024",
-      links: {}
+      links: {paper: "https://arxiv.org/abs/2405.11293" }
     },
     {
       year: 2024,
@@ -177,7 +177,7 @@ export default function Publications() {
       title: "Few-shot object detection on aerial imagery via deep metric learning and knowledge inheritance",
       authors: "Li Wu-zhou, Zhou Jia-wei, Li Xiang, Cao Yi, Jin Guang",
       venue: "International Journal of Applied Earth Observation and Geoinformation, 2023",
-      links: {}
+      links: {paper: "https://www.sciencedirect.com/science/article/pii/S1569843223002212" }
     },
     {
       year: 2023,
@@ -213,7 +213,7 @@ export default function Publications() {
       title: "Unsupervised 3D Shape Representation Learning Using Normalizing Flow",
       authors: "Li Xiang, Wen Congcong, Huang Hao",
       venue: "Asian Conference on Computer Vision, 2022",
-      links: {}
+      links: {paper: "https://openaccess.thecvf.com/content/ACCV2022/papers/Li_Unsupervised_3D_Shape_Representation_Learning_using_Normalizing_Flow_ACCV_2022_paper.pdf" }
     },
     {
       year: 2022,
@@ -234,7 +234,7 @@ export default function Publications() {
       title: "Unsupervised category-specific partial point set registration via joint shape completion and registration",
       authors: "Li Xiang, Wang Lingjing, Fang Yi",
       venue: "IEEE Transactions on Visualization and Computer Graphics, 2022",
-      links: {}
+      links: {paper : "https://ieeexplore.ieee.org/document/9729524"}
     },
     // 2021
     {
