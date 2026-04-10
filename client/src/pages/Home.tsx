@@ -175,7 +175,7 @@ export default function Home() {
                 </p>
                 
                 <p className="mt-4">
-                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 60 papers in top conferences and journals such as CVPR, ICCV, NeurIPS, TPAMI, and IJCV, with over 10k citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 4000 citations on Google Scholar and the first conversational MLLM in remote sensing - RSGPT.
+                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 60 papers in top conferences and journals such as CVPR, ICCV, NeurIPS, TPAMI, and IJCV, with over 10k citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 4000 citations on Google Scholar and the first conversational MLLM in remote sensing - <span className="font-semibold">RSGPT</span>.
                 </p>
 
                 <p className="mt-4">
