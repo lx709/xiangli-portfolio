@@ -190,10 +190,10 @@ export default function Home() {
 
               {/* Contact Links */}
               <div className="mt-6 flex flex-wrap gap-4">
-                <a href="mailto:xiang.li@bristol.ac.uk" className="text-blue-600 hover:underline">Email</a>
-                <a href="#" className="text-blue-600 hover:underline">GitHub</a>
-                <a href="#" className="text-blue-600 hover:underline">Google Scholar</a>
-                <a href="#" className="text-blue-600 hover:underline">CV</a>
+                <a href="mailto:xiang92.li@bristol.ac.uk" className="text-blue-600 hover:underline">Email</a>
+                <a href="https://github.com/lx709" className="text-blue-600 hover:underline">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ&hl" className="text-blue-600 hover:underline">Google Scholar</a>
+                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ&hl" className="text-blue-600 hover:underline">CV</a>
               </div>
             </div>
           </div>
