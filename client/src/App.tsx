@@ -9,7 +9,8 @@ import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
 
 // Get base path from Vite's import.meta.env.BASE_URL
-const basePath = import.meta.env.BASE_URL;
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+// basePath will now be '' (empty string), which is correct for a root-domain site
 
 function AppRouter() {
   return (
