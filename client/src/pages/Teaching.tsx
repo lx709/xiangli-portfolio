@@ -15,11 +15,13 @@ export default function Teaching() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 bg-gray-900 text-white z-50">
-        <div className="container max-w-6xl mx-auto px-4 py-4 flex gap-8">
-          <Link href="/" className="font-semibold hover:text-gray-300">HOME</Link>
-          <Link href="/publications" className="font-semibold hover:text-gray-300">PUBLICATIONS</Link>
-          <Link href="/teaching" className="font-semibold hover:text-gray-300">TEACHING</Link>
+      <nav className="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-start gap-8 py-4 flex-wrap">
+            <Link href="/" className="font-semibold hover:text-gray-300 transition">HOME</Link>
+            <Link href="/publications" className="font-semibold hover:text-gray-300 transition">PUBLICATIONS</Link>
+            <Link href="/teaching" className="font-semibold hover:text-gray-300 transition">TEACHING</Link>
+          </div>
         </div>
       </nav>
 
