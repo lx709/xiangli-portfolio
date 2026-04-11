@@ -43,11 +43,11 @@ export default function Recruiting() {
 
   const researchAreas = [
     "Multimodal Large Language Models",
-    "Computer Vision",
-    "Remote Sensing",
     "3D Vision",
-    "Generative Modeling",
-    "Efficient AI",
+    "Remote Sensing",
+    "AI Agents",
+    "World Models",
+    "AI for Science",
   ];
 
   const essentialQualifications = [
@@ -106,6 +106,28 @@ export default function Recruiting() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+        
+        {/* What We Offer */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">What We Offer</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Isambard-AI Supercomputing</h3>
+              <p className="text-slate-700">Access to over 5000 GH200 GPUs, providing powerful computational resources to support your research.</p>
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+              <div className="text-4xl mb-4">👥</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">One-on-One Mentoring</h3>
+              <p className="text-slate-700">At least one hour of 1v1 meetings per week, providing personalized research guidance and career development advice.</p>
+            </div>
+            <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Competitive Internship Salary</h3>
+              <p className="text-slate-700">Competitive internship salary provided to support you in focusing on research work.</p>
+            </div>
           </div>
         </section>
 
