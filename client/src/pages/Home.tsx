@@ -183,9 +183,9 @@ export default function Home() {
                     <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
-                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ&hl" title="Google Scholar" className="transition hover:opacity-80">
+                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ" title="Google Scholar" className="transition hover:opacity-80">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#4285F4">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm1.5 14h-3v-2h3v2zm0-4h-3V8h3v4z"/>
+                    <path d="M12 0c-1.657 0-3 1.343-3 3 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.657-1.343-3-3-3zm0 6c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 2c2.209 0 4 1.791 4 4s-1.791 4-4 4-4-1.791-4-4 1.791-4 4-4zm0 8c-3.314 0-6 2.686-6 6v2h12v-2c0-3.314-2.686-6-6-6z"/>
                   </svg>
                 </a>
                 <a href="https://github.com/lx709" title="GitHub" className="transition hover:opacity-80">
