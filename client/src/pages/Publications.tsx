@@ -149,6 +149,14 @@ export default function Publications() {
     // 2023
     {
       year: 2023,
+      title: "RSGPT: A Remote Sensing Vision Language Model and Benchmark",
+      authors: "Yuan Hu, Jianlong Yuan, Congcong Wen, Xiaonan Lu, Xiang Li*",
+      venue: "ISPRS JPRS, 2023",
+      badge: "ESI Highly Cited Paper (1%)",
+      links: { project: "https://github.com/Lavender105/RSGPT", paper: "https://arxiv.org/abs/2406.12384", code: "https://github.com/Lavender105/RSGPT" },
+    },
+    {
+      year: 2023,
       title: "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
       authors: "Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny",
       venue: "2nd MMFM Workshop in CVPR2024",
