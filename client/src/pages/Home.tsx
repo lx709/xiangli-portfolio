@@ -4,20 +4,22 @@ import { Link } from "wouter";
 
 export default function Home() {
   const [expandedDropdowns, setExpandedDropdowns] = useState<Record<string, boolean>>({});
-  const [githubStars, setGithubStars] = useState<Record<string, number>>({});
+  const repos = [
+    { key: 'minigpt4', owner: 'Vision-CAIR', repo: 'MiniGPT-4', num: 25743 },
+    { key: 'rsgpt', owner: 'Lavender105', repo: 'RSGPT', num: 144 },
+    { key: 'vrsbench', owner: 'lx709', repo: 'VRSBench', num: 66 },
+    { key: 'rsclip', owner: 'lx709', repo: 'RS-CLIP', num: 43 },
+  ];
+
+  const [githubStars, setGithubStars] = useState<Record<string, number>>(
+    repos.reduce((acc, { key, num }) => ({ ...acc, [key]: num }), {})
+  );
 
   useEffect(() => {
     const fetchGithubStars = async () => {
-      const repos = [
-        { key: 'minigpt4', owner: 'Vision-CAIR', repo: 'MiniGPT-4' },
-        { key: 'rsgpt', owner: 'Lavender105', repo: 'RSGPT' },
-        { key: 'vrsbench', owner: 'lx709', repo: 'VRSBench' },
-        { key: 'rsclip', owner: 'lx709', repo: 'RS-CLIP' },
-        { key: 'uni3dl', owner: 'lx709', repo: 'Uni3DL' },
-      ];
 
       const stars: Record<string, number> = {};
-      for (const { key, owner, repo } of repos) {
+      for (const { key, owner, repo, num } of repos) {
         try {
           const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
           const data = await response.json();
@@ -26,7 +28,7 @@ export default function Home() {
           console.error(`Failed to fetch stars for ${owner}/${repo}:`, error);
         }
       }
-      setGithubStars(stars);
+      setGithubStars(prev => ({ ...prev, ...stars }));
     };
 
     fetchGithubStars();
