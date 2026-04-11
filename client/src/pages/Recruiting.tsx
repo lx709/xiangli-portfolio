@@ -2,6 +2,13 @@ import { Link } from "wouter";
 import { Mail } from "lucide-react";
 
 export default function Recruiting() {
+  // Navigation toolbar same as Home page
+  const navLinks = [
+    { href: "/", label: "HOME" },
+    { href: "/publications", label: "PUBLICATIONS" },
+    { href: "/teaching", label: "TEACHING" },
+    { href: "/recruiting", label: "RECRUITING" },
+  ];
   const positions = [
     {
       title: "Postdoc Position",
@@ -11,7 +18,7 @@ export default function Recruiting() {
     {
       title: "PhD Position",
       icon: "🎓",
-      description: "School of Computer Science offers multiple PhD scholarships. If you are interested, please fill out the application form or send an email with the title [Prospective PhD] including: a copy of your CV, and what topics you'd like to explore.",
+      description: "School of Computer Science offers multiple PhD scholarships. If you are interested, please fill out the application form or send an email with the title [Prospective PhD] including: a copy of your CV, why you want to work with the group, and what topics you'd like to explore.",
       scholarships: [
         "Bristol Postgraduate Research and EPSRC Scholarship",
         "PrO-AI CDT",
@@ -40,7 +47,7 @@ export default function Recruiting() {
     "Remote Sensing",
     "3D Vision",
     "Generative Modeling",
-    "Self-Supervised Learning",
+    "Efficient AI",
   ];
 
   const essentialQualifications = [
@@ -61,26 +68,21 @@ export default function Recruiting() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Join Our Research Team</h1>
-          <p className="text-lg text-slate-200">
-            Exciting opportunities for PhD students, visiting researchers, and research interns to work on cutting-edge multimodal AI, computer vision, and machine learning projects at the University of Bristol.
-          </p>
+      {/* Navigation Bar - Dark with white text */}
+      <nav className="bg-gray-800 text-white sticky top-0 z-50 shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-start gap-8 py-4 flex-wrap">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="font-semibold hover:text-gray-300 transition">
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
+      </nav>
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
-        {/* Back to Home Link */}
-        <div className="mb-8">
-          <Link href="/">
-            <a className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-lg text-slate-700 font-medium transition">
-              ← Back to Home
-            </a>
-          </Link>
-        </div>
 
         {/* Available Positions */}
         <section className="mb-16">

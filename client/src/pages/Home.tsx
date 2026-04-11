@@ -136,6 +136,7 @@ export default function Home() {
             <Link href="/" className="font-semibold hover:text-gray-300 transition">HOME</Link>
             <Link href="/publications" className="font-semibold hover:text-gray-300 transition">PUBLICATIONS</Link>
             <Link href="/teaching" className="font-semibold hover:text-gray-300 transition">TEACHING</Link>
+            <Link href="/recruiting" className="font-semibold hover:text-gray-300 transition">RECRUITING</Link>
           </div>
         </div>
       </nav>
