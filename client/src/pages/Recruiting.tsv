@@ -1,0 +1,175 @@
+import { Link } from "wouter";
+import { Mail } from "lucide-react";
+
+export default function Recruiting() {
+  const positions = [
+    {
+      title: "Postdoc Position",
+      icon: "👨‍🔬",
+      description: "If you would like to go with CSC or other similar fundings, please fill out the application form or send an email to Xiang Li with the title [Prospective Postdoc].",
+    },
+    {
+      title: "PhD Position",
+      icon: "🎓",
+      description: "School of Computer Science offers multiple PhD scholarships. If you are interested, please fill out the application form or send an email with the title [Prospective PhD] including: a copy of your CV, and what topics you'd like to explore.",
+      scholarships: [
+        "Bristol Postgraduate Research and EPSRC Scholarship",
+        "PrO-AI CDT",
+      ],
+    },
+    {
+      title: "CSC Scholarship for Students from China",
+      icon: "🌏",
+      description: "The China Scholarship Council (CSC) and the University of Bristol jointly fund multiple scholarships for students from China.",
+    },
+    {
+      title: "Visiting PhD Position",
+      icon: "✈️",
+      description: "If you are a PhD student at another institution interested in visiting the group for 3-12 months, please fill out the application form or send an email with the title [Prospective Visiting PhD].",
+    },
+    {
+      title: "Research Internship Position",
+      icon: "💼",
+      description: "We welcome applications from motivated students interested in working on research projects in computer vision and machine learning. Please fill out the application form or send an email with the title [Prospective Research Position].",
+    },
+  ];
+
+  const researchAreas = [
+    "Multimodal Large Language Models",
+    "Computer Vision",
+    "Remote Sensing",
+    "3D Vision",
+    "Generative Modeling",
+    "Self-Supervised Learning",
+  ];
+
+  const essentialQualifications = [
+    "Strong academic background in Computer Science, Mathematics, Engineering, or related fields",
+    "Programming experience in Python, with familiarity in PyTorch or TensorFlow",
+    "Mathematical foundation in linear algebra, calculus, statistics, and machine learning",
+    "Research experience (publications, thesis projects, or relevant coursework)",
+    "English proficiency for international students",
+  ];
+
+  const preferredQualifications = [
+    "Prior experience with computer vision or machine learning projects",
+    "Publications in relevant conferences or journals",
+    "Experience with GPU computing and distributed training",
+    "Background in optimization, deep learning, or related areas",
+    "Open source contributions to relevant projects",
+  ];
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl font-bold mb-4">Join Our Research Team</h1>
+          <p className="text-lg text-slate-200">
+            Exciting opportunities for PhD students, visiting researchers, and research interns to work on cutting-edge multimodal AI, computer vision, and machine learning projects at the University of Bristol.
+          </p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        {/* Back to Home Link */}
+        <div className="mb-8">
+          <Link href="/">
+            <a className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 rounded-lg text-slate-700 font-medium transition">
+              ← Back to Home
+            </a>
+          </Link>
+        </div>
+
+        {/* Available Positions */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">Available Positions</h2>
+          <div className="space-y-6">
+            {positions.map((position, idx) => (
+              <div key={idx} className="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md transition">
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">{position.icon}</span>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{position.title}</h3>
+                    <p className="text-slate-700 mb-3">{position.description}</p>
+                    {position.scholarships && (
+                      <ul className="list-disc list-inside text-slate-600 space-y-1">
+                        {position.scholarships.map((scholarship, i) => (
+                          <li key={i}>{scholarship}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Research Areas */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">Research Areas We're Hiring For</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {researchAreas.map((area, idx) => (
+              <div key={idx} className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <span className="text-blue-600 text-xl">→</span>
+                <span className="text-slate-800 font-medium">{area}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Ideal Candidates */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">Ideal Candidates</h2>
+
+          {/* Essential Qualifications */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">Essential Qualifications</h3>
+            <ul className="space-y-3">
+              {essentialQualifications.map((qual, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-slate-700">{qual}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Preferred Qualifications */}
+          <div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">Preferred Qualifications</h3>
+            <ul className="space-y-3">
+              {preferredQualifications.map((qual, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold mt-1">★</span>
+                  <span className="text-slate-700">{qual}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Ready to Apply */}
+        <section className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8 mb-16">
+          <h2 className="text-2xl font-bold text-slate-900 mb-4">Ready to Apply?</h2>
+          <p className="text-slate-700 mb-6">
+            I encourage you to reach out even if you're unsure about your qualifications. I'm always happy to discuss potential opportunities and help you understand if our research group would be a good fit for your interests and goals.
+          </p>
+          <div className="flex items-center gap-2">
+            <Mail className="w-5 h-5 text-blue-600" />
+            <a href="mailto:xiang92.li@bristol.ac.uk" className="text-blue-600 hover:text-blue-700 font-medium">
+              xiang92.li@bristol.ac.uk
+            </a>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <div className="text-center text-slate-600 text-sm border-t border-slate-200 pt-8">
+          <p>School of Computer Science, University of Bristol</p>
+        </div>
+      </div>
+    </div>
+  );
+}

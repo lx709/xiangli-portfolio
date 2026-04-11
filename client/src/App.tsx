@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Publications from "./pages/Publications";
 import Teaching from "./pages/Teaching";
+import Recruiting from "./pages/Recruiting";
 
 // Get base path from Vite's import.meta.env.BASE_URL
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -18,6 +19,7 @@ function AppRouter() {
       <Route path={"/"} component={Home} />
       <Route path={"/publications"} component={Publications} />
       <Route path={"/teaching"} component={Teaching} />
+      <Route path={"/recruiting"} component={Recruiting} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
