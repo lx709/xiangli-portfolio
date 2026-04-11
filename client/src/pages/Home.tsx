@@ -134,14 +134,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-start gap-8 py-4 flex-wrap">
             <Link href="/" className="font-semibold hover:text-gray-300 transition">HOME</Link>
-            
-
-
             <Link href="/publications" className="font-semibold hover:text-gray-300 transition">PUBLICATIONS</Link>
-            
             <Link href="/teaching" className="font-semibold hover:text-gray-300 transition">TEACHING</Link>
-
-
           </div>
         </div>
       </nav>
