@@ -183,8 +183,10 @@ export default function Home() {
                     <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
-                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ" title="Google Scholar" className="p-2 rounded-lg bg-blue-500 transition hover:opacity-80">
-                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493919263/aoQc8aMmnhtk8J8RUBKwEN/M6HWMSRUJHns_f959d927.jpg" alt="Google Scholar" className="w-5 h-5" />
+                <a href="https://scholar.google.com/citations?user=4Apl5FgAAAAJ&hl" title="Google Scholar" className="transition hover:opacity-80">
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#4285F4">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm1.5 14h-3v-2h3v2zm0-4h-3V8h3v4z"/>
+                  </svg>
                 </a>
                 <a href="https://github.com/lx709" title="GitHub" className="transition hover:opacity-80">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#333333">
