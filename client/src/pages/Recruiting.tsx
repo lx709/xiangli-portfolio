@@ -13,31 +13,37 @@ export default function Recruiting() {
     {
       title: "Postdoc Position",
       icon: "👨‍🔬",
-      description: "If you would like to go with CSC or other similar fundings, please fill out the application form or send an email to Xiang Li with the title [Prospective Postdoc].",
+      description: "If you would like to go with CSC or other similar fundings, please send an email to Xiang Li with the title [Prospective Postdoc].",
+      links: [
+        { name: "CSC Postdoc Funding", url: "https://origin-www.csc.edu.cn/chuguo/s/4049" },
+      ],
     },
     {
       title: "PhD Position",
       icon: "🎓",
-      description: "School of Computer Science offers multiple PhD scholarships. If you are interested, please fill out the application form or send an email with the title [Prospective PhD] including: a copy of your CV, why you want to work with the group, and what topics you'd like to explore.",
+      description: "School of Computer Science offers multiple PhD scholarships. If you are interested, please send an email with the title [Prospective PhD] including: a copy of your CV, why you want to work with the group, and what topics you'd like to explore.",
       scholarships: [
-        "Bristol Postgraduate Research and EPSRC Scholarship",
-        "PrO-AI CDT",
+        { name: "Bristol Postgraduate Research and EPSRC Scholarship", url: "https://www.bristol.ac.uk/science-engineering/postgraduate-research/pgr-scholarships/" },
+        { name: "PrO-AI CDT", url: "https://www.bristol.ac.uk/cdt/practice-oriented-ai/" },
       ],
     },
     {
       title: "CSC Scholarship for Students from China",
       icon: "🌏",
-      description: "The China Scholarship Council (CSC) and the University of Bristol jointly fund multiple scholarships for students from China.",
+      description: "The China Scholarship Council (CSC) and the University of Bristol jointly fund multiple scholarships for students from China. Please send an email with the title [Prospective CSC Scholarship] for more information.",
+      links: [
+        { name: "CSC Scholarship Details", url: "https://origin-www.csc.edu.cn/article/3801" },
+      ],
     },
     {
       title: "Visiting PhD Position",
       icon: "✈️",
-      description: "If you are a PhD student at another institution interested in visiting the group for 3-12 months, please fill out the application form or send an email with the title [Prospective Visiting PhD].",
+      description: "If you are a PhD student at another institution interested in visiting the group for 3-12 months, please send an email with the title [Prospective Visiting PhD].",
     },
     {
       title: "Research Internship Position",
       icon: "💼",
-      description: "We welcome applications from motivated students interested in working on research projects in computer vision and machine learning. Please fill out the application form or send an email with the title [Prospective Research Position].",
+      description: "We welcome applications from motivated students interested in working on research projects in computer vision and machine learning. Please send an email with the title [Prospective Research Position].",
     },
   ];
 
@@ -98,7 +104,27 @@ export default function Recruiting() {
                     {position.scholarships && (
                       <ul className="list-disc list-inside text-slate-600 space-y-1">
                         {position.scholarships.map((scholarship, i) => (
-                          <li key={i}>{scholarship}</li>
+                          <li key={i}>
+                            {typeof scholarship === 'string' ? scholarship : (
+                              <>
+                                {scholarship.name}:{" "}
+                                <a href={scholarship.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">
+                                  call for application
+                                </a>
+                              </>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {position.links && (
+                      <ul className="list-disc list-inside text-slate-600 space-y-1 mt-2">
+                        {position.links.map((link, i) => (
+                          <li key={i}>
+                            <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 hover:underline">
+                              {link.name}
+                            </a>
+                          </li>
                         ))}
                       </ul>
                     )}
