@@ -248,37 +248,37 @@ export default function Home() {
         {/* Selected Publications */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Selected Publications</h2>
-          <p className="text-gray-600 mb-8">
-            See <Link href="/publications" className="text-blue-600 hover:underline">all publications</Link> for the complete list.
-          </p>
-          
-          <div className="space-y-6">
+          <div className="space-y-8">
             {publications.map((pub, idx) => (
-              <div key={idx} className="flex flex-col md:flex-row gap-4 pb-6 border-b border-gray-200">
-                <img
-                  src={pub.image}
-                  alt={pub.title}
-                  className="w-full md:w-24 h-auto md:h-24 rounded object-cover flex-shrink-0"
-                />
-                <div className="flex-1 w-full">
-                  <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">{pub.title}</h3>
-                  <p className="text-xs md:text-sm text-gray-600 mb-2">{pub.authors}</p>
-                  <p className="text-xs md:text-sm text-gray-600 font-semibold mb-3">{pub.venue}</p>
-                  {pub.badge && (
-                    <p className="text-xs font-semibold mb-3 inline-block bg-green-200 text-green-900 px-2 py-1 rounded">{pub.badge}</p>
+              <div key={idx} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                <div className="flex flex-col md:flex-row gap-6">
+                  {pub.image && (
+                    <div className="flex-shrink-0 w-full md:w-64">
+                      <img src={pub.image} alt={pub.title} className="w-full h-auto rounded-lg object-cover" />
+                    </div>
                   )}
-                  <div className="flex gap-3 flex-wrap items-center">
-                    {pub.links.paper && <a href={pub.links.paper} className="text-blue-600 hover:underline text-sm">pdf</a>}
-                    {pub.links.code && (
-                      <>
-                        <a href={pub.links.code} className="text-blue-600 hover:underline text-sm">code</a>
-                        {pub.githubRepoKey && githubStars[pub.githubRepoKey] !== undefined && (
-                          <span className="text-xs text-gray-500">⭐ {githubStars[pub.githubRepoKey]}</span>
-                        )}
-                      </>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{pub.title}</h3>
+                    <p className="text-sm text-gray-600 mb-2">{pub.authors}</p>
+                    <p className="text-sm text-gray-500 mb-3">{pub.venue}</p>
+                    {pub.badge && (
+                      <div className="mb-3 inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded">
+                        {pub.badge}
+                      </div>
                     )}
-                    {pub.links.project && <a href={pub.links.project} className="text-blue-600 hover:underline text-sm">project</a>}
-                    {pub.links.demo && <a href={pub.links.demo} className="text-blue-600 hover:underline text-sm">demo</a>}
+                    <div className="flex flex-wrap gap-3">
+                      {pub.links.project && <a href={pub.links.project} className="text-blue-600 hover:underline text-sm">Project</a>}
+                      {pub.links.paper && <a href={pub.links.paper} className="text-blue-600 hover:underline text-sm">Paper</a>}
+                      {pub.links.code && (
+                        <a href={pub.links.code} className="text-blue-600 hover:underline text-sm flex items-center gap-1">
+                          Code
+                          {pub.githubRepoKey && githubStars[pub.githubRepoKey] !== undefined && (
+                            <span className="text-gray-600">⭐ {githubStars[pub.githubRepoKey]}</span>
+                          )}
+                        </a>
+                      )}
+                      {pub.links.demo && <a href={pub.links.demo} className="text-blue-600 hover:underline text-sm">Demo</a>}
+                    </div>
                   </div>
                 </div>
               </div>
