@@ -154,14 +154,14 @@ export default function Home() {
               <div>
                 <img
                   src={profileImage}
-                  alt="Xiang Li (李祥)"
+                  alt="Xiang Li"
                   className="w-48 h-48 rounded-lg shadow-lg object-cover"
                 />
               </div>
 
               {/* Name and Short Intro */}
               <div className="text-center">
-                <h1 className="text-4xl font-bold text-gray-900 mb-2">Xiang Li</h1>
+                <h1 className="text-4xl font-bold text-gray-900 mb-2">Xiang Li (李祥)</h1>
                 <p className="text-lg text-gray-600 mb-1">Lecturer (Assistant Professor)</p>
                 <p className="text-sm text-gray-500 mb-4">
                   <a href="#" className="text-blue-600 hover:underline">University of Bristol</a>
