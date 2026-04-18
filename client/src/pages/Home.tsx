@@ -154,7 +154,7 @@ export default function Home() {
               <div>
                 <img
                   src={profileImage}
-                  alt="Xiang Li"
+                  alt="Xiang Li (李祥)"
                   className="w-48 h-48 rounded-lg shadow-lg object-cover"
                 />
               </div>
