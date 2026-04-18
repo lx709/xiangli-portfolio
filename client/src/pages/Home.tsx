@@ -161,9 +161,9 @@ export default function Home() {
 
               {/* Name and Short Intro */}
               <div className="text-center">
-                <h1 className="text-4xl font-bold text-gray-900 mb-2">Xiang Li (李祥)</h1>
+                <h1 className="text-2xl font-bold text-gray-900 mb-2">Xiang Li (李祥)</h1>
                 <p className="text-lg text-gray-600 mb-1">Lecturer (Assistant Professor)</p>
-                <p className="text-sm text-gray-500 mb-4">
+                <p className="text-lg text-gray-500 mb-4">
                   <a href="#" className="text-blue-600 hover:underline">University of Bristol</a>
                 </p>
               </div>
