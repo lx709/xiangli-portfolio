@@ -201,7 +201,7 @@ export default function Home() {
             <div className="flex-1">
               <div className="prose prose-sm max-w-none text-gray-700 leading-relaxed">
                 <p>
-                  I am a Lecturer (Assistant Professor) in the School of Computer Science at the University of Bristol and a faculty member of the Machine Learning and Computer Vision <span className="font-semibold">MaVi group</span>. Prior to joining Bristol, I held a Lecturer position at the University of Reading. Before that, I was a Postdoctoral Researcher at KAUST, working with Prof. <a href="https://www.mohamedelhoseiny.com/" className="text-blue-600 hover:underline">Mohamed Elhoseiny</a>, and at NYU, working with Prof. <a href="https://engineering.nyu.edu/faculty/yi-fang" className="text-blue-600 hover:underline">Yi Fang</a>.
+                  I am a Lecturer (Assistant Professor) in the School of Computer Science at the University of Bristol and a faculty member of the <a href="https://uob-mavi.github.io/people/" className="text-blue-600 hover:underline">MaVi</a> group. Prior to joining Bristol, I held a Lecturer position at the University of Reading. Before that, I was a Postdoctoral Researcher at KAUST, working with Prof. <a href="https://www.mohamedelhoseiny.com/" className="text-blue-600 hover:underline">Mohamed Elhoseiny</a>, and at NYU, working with Prof. <a href="https://engineering.nyu.edu/faculty/yi-fang" className="text-blue-600 hover:underline">Yi Fang</a>.
                 </p>
                 
                 <p className="mt-4">
