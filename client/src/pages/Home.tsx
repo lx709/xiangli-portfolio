@@ -44,6 +44,7 @@ export default function Home() {
   const profileImage = "https://raw.githubusercontent.com/lx709/lx709.github.io/main/images/lx.jpg";
 
   const news = [
+    { date: "04/2026", text: "One paper accepted for publication at Nature." },
     { date: "04/2026", text: "Geo-R1 was accepted for publication at ISPRS J." },
     { date: "03/2026", text: "I will serve as an Area Chair for NeurIPS 2026." },
     { date: "02/2026", text: "One paper accepted for publication at CVPR 2026 (oral)." },
