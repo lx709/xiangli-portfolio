@@ -118,15 +118,15 @@ export default function Home() {
     areaChairs: ["NeurIPS 2026", "ICLR 2026"],
     guestEditors: [
       "Associate Editor for IET Computer Vision",
-      "Guest Editor, IEEE Geoscience and Remote Sensing Magazine (IEEE GRSM)",
-      "Guest Editor, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (IEEE JSTARS)",
+      "Guest Editor, IEEE Geoscience and Remote Sensing Magazine (GRSM)",
+      "Guest Editor, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)",
       "Guest Editor, Geoscience and Remote Sensing Symposium (GSIS)",
     ],
     conferenceProgramCommittee: [
       "CVPR 2022/2023/2024/2025/2026, ICCV 2021/2023/2025, ECCV 2022/2024/2026, NeurIPS 2023/2024/2025, ICLR 2024/2025, AAAI 2022/2023/2024",
     ],
     journalReviewers: [
-      "TPAMI, TIP, TGRS, TMM, TVCG, Pattern Recognition, Remote Sensing of Environment, ISPRS JPRS, JAG",
+      "TPAMI, TIP, TVCG, TGRS, TMM, RSE, ISPRS JPRS, JAG",
     ],
   };
 
