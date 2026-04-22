@@ -126,7 +126,7 @@ export default function Home() {
       "CVPR 2022/2023/2024/2025/2026, ICCV 2021/2023/2025, ECCV 2022/2024/2026, NeurIPS 2023/2024/2025, ICLR 2024/2025, AAAI 2022/2023/2024",
     ],
     journalReviewers: [
-      "TPAMI, TIP, TGRS, TMM, TVCG, IJCV, Pattern Recognition, Remote Sensing of Environment, ISPRS JPRS, JAG",
+      "TPAMI, TIP, TGRS, TMM, TVCG, Pattern Recognition, Remote Sensing of Environment, ISPRS JPRS, JAG",
     ],
   };
 
@@ -206,7 +206,7 @@ export default function Home() {
                 </p>
                 
                 <p className="mt-4">
-                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 60 papers in top conferences and journals such as CVPR, ICCV, NeurIPS, TPAMI, and IJCV, with over 10k citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 4000 citations on Google Scholar and the first conversational MLLM in remote sensing - <span className="font-semibold">RSGPT</span>.
+                  My research focuses on <span className="font-semibold">multimodal large language models</span>, <span className="font-semibold">computer vision</span>, and <span className="font-semibold">remote sensing</span>. I have published over 60 papers in top conferences and journals such as Nature, CVPR, ICCV, NeurIPS, TPAMI, and TGRS, with over 10k citations on Google Scholar and an h-index of 28. I contributed to the well-known <span className="font-semibold">MiniGPT-4</span> project with over 4000 citations on Google Scholar and the first conversational MLLM in remote sensing - <span className="font-semibold">RSGPT</span>.
                 </p>
 
                 <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400">
