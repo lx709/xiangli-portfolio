@@ -226,8 +226,8 @@ export default function Home() {
               I'm currently working on multimodal large language models, computer vision, and remote sensing. My research primarily focuses on the following aspects:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li><span className="font-semibold">Vision-Language Models:</span> Generalist models, vision-language alignment, multi-agent, few-shot learning</li>
-              <li><span className="font-semibold">Remote Sensing:</span> EO foundation models, RS MLLMs, image processing, spatiotemporal reasoning</li>
+              <li><span className="font-semibold">Vision-Language Models:</span> Generalist models, vision-language alignment, AI agents</li>
+              <li><span className="font-semibold">Remote Sensing:</span> EO foundation models, RS MLLMs, few-shot learning</li>
               <li><span className="font-semibold">3D Vision:</span> Point cloud processing, 3D scene understanding, reconstruction, VLA</li>
             </ul>
           </div>
